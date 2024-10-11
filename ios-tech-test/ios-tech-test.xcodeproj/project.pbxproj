@@ -49,6 +49,7 @@
 		A1AF80442CB93AE200071618 /* ios-tech-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-tech-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AF80482CB93AE200071618 /* ios_tech_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_tech_testUITests.swift; sourceTree = "<group>"; };
 		A1AF804A2CB93AE200071618 /* ios_tech_testUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_tech_testUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1AF805E2CB93EBF00071618 /* HTTPClient */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = HTTPClient; path = "ios-tech-test/Resources/HTTPClient"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		A1AF801B2CB93ADD00071618 = {
 			isa = PBXGroup;
 			children = (
+				A1AF805D2CB93EBF00071618 /* Packages */,
 				A1AF80262CB93ADD00071618 /* ios-tech-test */,
 				A1AF803D2CB93AE200071618 /* ios-tech-testTests */,
 				A1AF80472CB93AE200071618 /* ios-tech-testUITests */,
@@ -157,6 +159,14 @@
 			children = (
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A1AF805D2CB93EBF00071618 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				A1AF805E2CB93EBF00071618 /* HTTPClient */,
+			);
+			name = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
