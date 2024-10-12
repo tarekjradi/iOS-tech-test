@@ -1,5 +1,5 @@
 //
-//  ListViewController.swift
+//  PopulationViewController.swift
 //  ios-tech-test
 //
 //  Created by Tarek Jradi on 11/10/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListViewController: UIViewController {
+class PopulationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
