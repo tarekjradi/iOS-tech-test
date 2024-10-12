@@ -29,6 +29,12 @@
 		A1AF80732CBA971600071618 /* HTTPClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1AF80722CBA971600071618 /* HTTPClient */; };
 		A1AF80752CBA980400071618 /* NationsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF80742CBA980400071618 /* NationsLocal.swift */; };
 		A1AF80762CBA980400071618 /* NationsLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF80742CBA980400071618 /* NationsLocal.swift */; };
+		A1AF80782CBA9DEA00071618 /* PopulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF80772CBA9DEA00071618 /* PopulationService.swift */; };
+		A1AF80792CBA9DEA00071618 /* PopulationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF80772CBA9DEA00071618 /* PopulationService.swift */; };
+		A1AF807B2CBA9E2800071618 /* Nations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF807A2CBA9E2800071618 /* Nations.swift */; };
+		A1AF807C2CBA9E2800071618 /* Nations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF807A2CBA9E2800071618 /* Nations.swift */; };
+		A1AF807E2CBA9E5700071618 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF807D2CBA9E5700071618 /* States.swift */; };
+		A1AF807F2CBA9E5700071618 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF807D2CBA9E5700071618 /* States.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +75,9 @@
 		A1AF806B2CB990D800071618 /* PopulationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationRequest.swift; sourceTree = "<group>"; };
 		A1AF806E2CB990F300071618 /* PopulationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationRepository.swift; sourceTree = "<group>"; };
 		A1AF80742CBA980400071618 /* NationsLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NationsLocal.swift; sourceTree = "<group>"; };
+		A1AF80772CBA9DEA00071618 /* PopulationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationService.swift; sourceTree = "<group>"; };
+		A1AF807A2CBA9E2800071618 /* Nations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nations.swift; sourceTree = "<group>"; };
+		A1AF807D2CBA9E5700071618 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +169,9 @@
 		A1AF80582CB93B6C00071618 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A1AF807A2CBA9E2800071618 /* Nations.swift */,
+				A1AF807D2CBA9E5700071618 /* States.swift */,
+				A1AF80772CBA9DEA00071618 /* PopulationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -347,13 +359,16 @@
 			files = (
 				A1AF806F2CB990F300071618 /* PopulationRepository.swift in Sources */,
 				A1AF802C2CB93ADD00071618 /* ListViewController.swift in Sources */,
+				A1AF80782CBA9DEA00071618 /* PopulationService.swift in Sources */,
 				A1AF80752CBA980400071618 /* NationsLocal.swift in Sources */,
+				A1AF807B2CBA9E2800071618 /* Nations.swift in Sources */,
 				A1AF80632CB9411700071618 /* RequestConfig.swift in Sources */,
 				A1AF806C2CB990D800071618 /* PopulationRequest.swift in Sources */,
 				A1AF80692CB98C2E00071618 /* StatesLocal.swift in Sources */,
 				A1AF80282CB93ADD00071618 /* AppDelegate.swift in Sources */,
 				A1AF802A2CB93ADD00071618 /* SceneDelegate.swift in Sources */,
 				A1AF80662CB9415200071618 /* SerializationFormatter.swift in Sources */,
+				A1AF807E2CBA9E5700071618 /* States.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +376,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AF80792CBA9DEA00071618 /* PopulationService.swift in Sources */,
 				A1AF806A2CB98C2E00071618 /* StatesLocal.swift in Sources */,
+				A1AF807C2CBA9E2800071618 /* Nations.swift in Sources */,
+				A1AF807F2CBA9E5700071618 /* States.swift in Sources */,
 				A1AF80762CBA980400071618 /* NationsLocal.swift in Sources */,
 				A1AF803F2CB93AE200071618 /* ios_tech_testTests.swift in Sources */,
 				A1AF80702CB990F300071618 /* PopulationRepository.swift in Sources */,
