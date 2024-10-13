@@ -37,6 +37,8 @@
 		A1AF807F2CBA9E5700071618 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF807D2CBA9E5700071618 /* States.swift */; };
 		A1AF80812CBAAB9500071618 /* PopulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF80802CBAAB9500071618 /* PopulationViewModel.swift */; };
 		A1AF80822CBAAB9500071618 /* PopulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AF80802CBAAB9500071618 /* PopulationViewModel.swift */; };
+		A1AF80842CBB288F00071618 /* PopulationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AF80832CBB288F00071618 /* PopulationViewController.xib */; };
+		A1AF80852CBB288F00071618 /* PopulationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1AF80832CBB288F00071618 /* PopulationViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +83,7 @@
 		A1AF807A2CBA9E2800071618 /* Nations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nations.swift; sourceTree = "<group>"; };
 		A1AF807D2CBA9E5700071618 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		A1AF80802CBAAB9500071618 /* PopulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopulationViewModel.swift; sourceTree = "<group>"; };
+		A1AF80832CBB288F00071618 /* PopulationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopulationViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +167,7 @@
 		A1AF80572CB93B5800071618 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A1AF80832CBB288F00071618 /* PopulationViewController.xib */,
 				A1AF802B2CB93ADD00071618 /* PopulationViewController.swift */,
 				A1AF80802CBAAB9500071618 /* PopulationViewModel.swift */,
 			);
@@ -337,6 +341,7 @@
 				A1AF80342CB93AE100071618 /* LaunchScreen.storyboard in Resources */,
 				A1AF80312CB93AE100071618 /* Assets.xcassets in Resources */,
 				A1AF802F2CB93ADD00071618 /* Main.storyboard in Resources */,
+				A1AF80842CBB288F00071618 /* PopulationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1AF80852CBB288F00071618 /* PopulationViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

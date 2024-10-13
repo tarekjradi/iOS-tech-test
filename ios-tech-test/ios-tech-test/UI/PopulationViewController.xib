@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PopulationViewController" customModule="ios_tech_test" customModuleProvider="target">
+            <connections>
+                <outlet property="segmentedControl" destination="4pJ-Jx-7kg" id="g8W-Sa-Egz"/>
+                <outlet property="tableView" destination="r4p-x7-AO8" id="9kr-ZC-Q8E"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ftr-9b-3eH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="4pJ-Jx-7kg">
+                    <rect key="frame" x="140.5" y="44" width="133" height="32"/>
+                    <segments>
+                        <segment title="States"/>
+                        <segment title="Nations"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentChanged:" destination="-1" eventType="valueChanged" id="rbn-TX-BIn"/>
+                    </connections>
+                </segmentedControl>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-x7-AO8">
+                    <rect key="frame" x="20" y="82" width="374" height="780"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0m5-pp-bB9"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="r4p-x7-AO8" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fKk-yN-LfE"/>
+                <constraint firstItem="r4p-x7-AO8" firstAttribute="top" secondItem="4pJ-Jx-7kg" secondAttribute="bottom" constant="7" id="lHg-6i-WFW"/>
+                <constraint firstItem="r4p-x7-AO8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="nTl-70-TG9"/>
+                <constraint firstItem="4pJ-Jx-7kg" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="oTC-L0-vDS"/>
+                <constraint firstItem="4pJ-Jx-7kg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="sng-co-w0j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="r4p-x7-AO8" secondAttribute="trailing" constant="20" id="x2w-u9-wGh"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="64.955357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
