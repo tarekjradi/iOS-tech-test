@@ -37,16 +37,26 @@ class PopulationViewController: UIViewController {
         if segmentedControl.selectedSegmentIndex == 0 {
             viewModel.getStates(completion: { [weak self] error in
                 DispatchQueue.main.sync {
+                    if error != nil { self?.displayError() }
                     self?.tableView.reloadData()
                 }
             })
         } else {
             viewModel.getNations(completion: { [weak self] error in
                 DispatchQueue.main.sync {
+                    if error != nil { self?.displayError() }
                     self?.tableView.reloadData()
                 }
             })
         }
+    }
+    
+    private func displayError() {
+        let alert = UIAlertController(title: "Error data loading",
+                                      message: nil,
+                                      preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
     // MARK: - @IBActions

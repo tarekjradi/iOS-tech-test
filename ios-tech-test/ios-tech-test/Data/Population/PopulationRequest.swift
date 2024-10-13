@@ -8,6 +8,11 @@
 import Foundation
 import HTTPClient
 
+private enum RequestError: Error {
+    case invalidRequest
+    case serialization
+}
+
 protocol PopulationRequest {
     func getNations(completion: @escaping (NationsLocal?, Error?) -> Void)
     func getStates(completion: @escaping (StatesLocal?, Error?) -> Void)
@@ -42,7 +47,7 @@ class DefaultPopulationRequest: PopulationRequest {
             guard let nations: NationsLocal = SerializationFormatter.standard.parse(
                 with: responseData,
                 model: NationsLocal.self) as? NationsLocal else {
-                    completion(nil, NSError())
+                    completion(nil, RequestError.serialization)
                     return
             }
             completion(nations, nil)
@@ -66,7 +71,7 @@ class DefaultPopulationRequest: PopulationRequest {
             guard let states: StatesLocal = SerializationFormatter.standard.parse(
                 with: responseData,
                 model: StatesLocal.self) as? StatesLocal else {
-                    completion(nil, NSError())
+                    completion(nil, RequestError.serialization)
                     return
             }
             completion(states, nil)
